@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Directorio de cafés en Caracas. Descubre lugares para tomar café, trabajar o reunirte." />
+  <title>Cafés de Caracas</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero__content">
+      <span class="eyebrow">DIRECTORIO LOCAL</span>
+
+      <h1>Cafés de Caracas</h1>
+
+      <p>Descubre espacios para disfrutar buen café, trabajar, conversar o simplemente escapar un rato del tráfico caraqueño.</p>
+
+      <!-- Search -->
+      <div class="search-box">
+        <label class="sr-only" for="searchInput">Buscar cafés</label>
+        <input type="search" id="searchInput" placeholder="Buscar por nombre, zona o especialidad..." autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORA</span>
+          <h2 id="directory-title">Coffee shops</h2>
+        </div>
+
+        <p id="resultCount" class="result-count" aria-live="polite"></p>
+      </div>
+
+      <!-- Coffee Shop Grid -->
+      <div id="coffeeShopList" class="coffee-grid"></div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="empty-state" hidden>
+        <h3>No encontramos cafés.</h3>
+        <p>Prueba con otra zona, nombre o tipo de café.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Directorio de cafés en Caracas</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

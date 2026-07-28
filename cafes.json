@@ -1,0 +1,698 @@
+[
+  {
+    "name": "Sport Park Cafe",
+    "rate": 5.0,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Sport+Park+Cafe",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe de Gatos",
+    "rate": 5.0,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Caf%C3%A9+de+los+gatos",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Juris Cafe & Lunch",
+    "rate": 5.0,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Juris+Caf%C3%A9+%26+Lunch",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Tributo Casa de Cafe",
+    "rate": 4.8,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "este",
+    "notes": "drivethru, entrega a domicilio"
+  },
+  {
+    "name": "Savignando Cafe",
+    "rate": 4.8,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/1ojixQUqw9ZfhVFo7",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "Academia de Caffe Carbone Espresso",
+    "rate": 4.8,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Accademia+del+Caff%C3%A9+Carbone+Espresso",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Hugonodonte Cafe",
+    "rate": 4.8,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/HUGONODONTE+Caf%C3%A9",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Nosso Cafe",
+    "rate": 4.8,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Nosso+Caf%C3%A9+C.A",
+    "zone": "oeste",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Canel",
+    "rate": 4.8,
+    "cost": "5-25$",
+    "link": "https://www.google.com/maps/place/Canel+El+Rosal",
+    "zone": "centro-este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Wao Cafe",
+    "rate": 4.7,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/Kpp1Co8tFcSVgFyz7",
+    "zone": "centro-este",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Coffee Town Caracas",
+    "rate": 4.7,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/nMSNqGd6h9ZqRLGUA",
+    "zone": "oeste",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Caracas Coffee Roaster",
+    "rate": 4.7,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/CQVQSh1aGVzs3xqN9",
+    "zone": "este",
+    "notes": "drivethru, entrega sin contacto"
+  },
+  {
+    "name": "Manva Natura Market",
+    "rate": 4.7,
+    "cost": "5-20$",
+    "link": "https://maps.app.goo.gl/3zgFu73cbk95WTSP9",
+    "zone": "este",
+    "notes": "drivethru, entrega sin contacto"
+  },
+  {
+    "name": "Cafe Motatan",
+    "rate": 4.7,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/2jo5YHvQKjRnCYg57",
+    "zone": "este",
+    "notes": "retiros en puerta, entregas sin contacto, pedidos en linea"
+  },
+  {
+    "name": "La Cafeteria Coffee Roaster",
+    "rate": 4.7,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/iHPLYsALv4JYS9mK8",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Reader's Cafe",
+    "rate": 4.7,
+    "cost": "15-20$",
+    "link": "https://www.google.com/maps/place/Reader%E2%80%99s+Cafe",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Mola Caracas",
+    "rate": 4.7,
+    "cost": "10-40$",
+    "link": "https://www.google.com/maps/place/Mola+Caracas",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Constanza",
+    "rate": 4.7,
+    "cost": "10-15$",
+    "link": "https://www.google.com/maps/place/Constanza",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Foam Cafe",
+    "rate": 4.6,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/vRoTyMSQuK8w7p8W8",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Cafe Gad CCS",
+    "rate": 4.7,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/5F8S7K2cBWZYyUbE6",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Cafe Vomero",
+    "rate": 4.6,
+    "cost": "10-15$",
+    "link": "https://maps.app.goo.gl/ZNAHekg8DhXWMDpY9",
+    "zone": "este",
+    "notes": "retiros en puerta"
+  },
+  {
+    "name": "Socado Cafe",
+    "rate": 4.5,
+    "cost": "10-25$",
+    "link": "https://maps.app.goo.gl/ZJKZZn8dxMMTKU5cA",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "Zaituna Cafe",
+    "rate": 4.4,
+    "cost": "5-25$",
+    "link": "https://maps.app.goo.gl/TziVLsUMaWUYwCMz5",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "Caffe Piu",
+    "rate": 4.5,
+    "cost": "10-15$",
+    "link": "https://maps.app.goo.gl/GH4Qsuf2JbEeHsvHA",
+    "zone": "centro",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Cafe Noisette",
+    "rate": 4.4,
+    "cost": "5-35$",
+    "link": "https://maps.app.goo.gl/z3PGhbppc8Sac54Q8",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Hard Rock Cafe Caracas",
+    "rate": 4.4,
+    "cost": "15-45$",
+    "link": "https://maps.app.goo.gl/RuFdK68XfGaENajg6",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "Cafe Venezuela",
+    "rate": 4.2,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/tG28RNmb7SKFwUMp9",
+    "zone": "centro",
+    "notes": "para llevar, averiguar"
+  },
+  {
+    "name": "Arabica",
+    "rate": 4.1,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/HTf7dE1HbsEcutqbA",
+    "zone": "este",
+    "notes": "retiros en puerta, para llevar"
+  },
+  {
+    "name": "Gran Cafe",
+    "rate": 4.2,
+    "cost": "5-25$",
+    "link": "https://maps.app.goo.gl/UW9S5dLzxpKA75Di8",
+    "zone": "centro",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Cecilia Cafe",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/ceojuMiSjft7s3HM8",
+    "zone": "oeste",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Amelie Cafe y Pasteleria",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/vXK8fmRDdudSPeAL7",
+    "zone": "este",
+    "notes": "para llevar, entrega sin contacto"
+  },
+  {
+    "name": "Cafeteria Sociedad del Cafe",
+    "rate": 4.6,
+    "cost": "1-20$",
+    "link": "https://maps.app.goo.gl/fJwCwLBJwhgHaQ2z7",
+    "zone": "este",
+    "notes": "para llevar, entrega sin contacto"
+  },
+  {
+    "name": "Paramo Cafe",
+    "rate": 4.4,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/p1KGdPxgPaAmcekg9",
+    "zone": "oeste",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Artesanos Cafeteria",
+    "rate": 4.6,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/Ndmj85dmx364y4F58",
+    "zone": "oeste",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Quiero1Cafe Coffee Roasters",
+    "rate": 4.6,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/Wt41wsdsLRzAk4Pq7",
+    "zone": "este",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Casa Tostada",
+    "rate": 4.7,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "este",
+    "notes": "especialidad"
+  },
+  {
+    "name": "Bulevar Café",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "centro-este",
+    "notes": "brunch, cold brew"
+  },
+  {
+    "name": "Origen 58",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "centro-este",
+    "notes": "métodos manuales"
+  },
+  {
+    "name": "Café Ávila",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "centro-este",
+    "notes": "repostería"
+  },
+  {
+    "name": "Sombra Café",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "este",
+    "notes": "workspace"
+  },
+  {
+    "name": "Pausa",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "este",
+    "notes": "terraza"
+  },
+  {
+    "name": "Bitcoin Cafe Venezuela",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Bitcoin+Caf%C3%A9+Venezuela",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Pasteleria Azu",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Pasteler%C3%ADa+Az%C3%BA",
+    "zone": "centro-este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "El Jardin Caracas",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/El+Jardin+Caracas",
+    "zone": "centro-este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "MoDo Caracas",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/MoDo+Caracas",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe TECC",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Cafe+TECC",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe Pasteleria La Trufa",
+    "rate": 4.5,
+    "cost": "15-20$",
+    "link": "https://www.google.com/maps/place/Caf%C3%A9+Pasteler%C3%ADa+La+Trufa",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Caffetto K'fe",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/CAFFETTO+K%27FE",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe 55 Restaurante",
+    "rate": 4.5,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Caf%C3%A9+55+Restaurante%2FCaracas",
+    "zone": "oeste",
+    "notes": "domicilio"
+  },
+  {
+    "name": "Surti Donuts",
+    "rate": 4.6,
+    "cost": "5-15$",
+    "link": "https://www.google.com/maps/place/Surti+Donuts",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe Melosa",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Cafe+Melosa",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe Roma",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Caf%C3%A9+Roma",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafeteria Sociedad del Cafe",
+    "rate": 4.6,
+    "cost": "1-20$",
+    "link": "https://maps.app.goo.gl/fJwCwLBJwhgHaQ2z7",
+    "zone": "este",
+    "notes": "para llevar, entrega sin contacto"
+  },
+  {
+    "name": "Pausa",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "este",
+    "notes": "terraza"
+  },
+  {
+    "name": "Artesanos Cafeteria",
+    "rate": 4.6,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/Ndmj85dmx364y4F58",
+    "zone": "oeste",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Quiero1Cafe Coffee Roasters",
+    "rate": 4.6,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/Wt41wsdsLRzAk4Pq7",
+    "zone": "este",
+    "notes": "para llevar, pedidos en linea"
+  },
+  {
+    "name": "Bulevar Café",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "centro-este",
+    "notes": "brunch, cold brew"
+  },
+  {
+    "name": "Origen 58",
+    "rate": 4.6,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/YaSTLYK6u3R5PQ626",
+    "zone": "centro-este",
+    "notes": "métodos manuales"
+  },
+  {
+    "name": "Foam Cafe",
+    "rate": 4.6,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/vRoTyMSQuK8w7p8W8",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "St. Honore",
+    "rate": 4.6,
+    "cost": "10-30$",
+    "link": "https://www.google.com/maps/place/St.+Honor%C3%A9",
+    "zone": "centro-este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Saggezza",
+    "rate": 4.4,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Saggezza",
+    "zone": "centro",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cine Citta",
+    "rate": 4.4,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Cine+Citta",
+    "zone": "centro",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Pasteleria Palla Caracas",
+    "rate": 4.4,
+    "cost": "5-20$",
+    "link": "https://www.google.com/maps/place/Pasteler%C3%ADa+Pall%C3%A1+Caracas",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe Noisette",
+    "rate": 4.4,
+    "cost": "5-35$",
+    "link": "https://maps.app.goo.gl/z3PGhbppc8Sac54Q8",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Hard Rock Cafe Caracas",
+    "rate": 4.4,
+    "cost": "15-45$",
+    "link": "https://maps.app.goo.gl/RuFdK68XfGaENajg6",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "Zaituna Cafe",
+    "rate": 4.4,
+    "cost": "5-25$",
+    "link": "https://maps.app.goo.gl/TziVLsUMaWUYwCMz5",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "Cafe Billares Nico",
+    "rate": 4.4,
+    "cost": "1-5$",
+    "link": "https://www.google.com/maps/place/Caf%C3%A9+Billares+Nico",
+    "zone": "centro-oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Bajo el Reloj",
+    "rate": 4.4,
+    "cost": "10-25$",
+    "link": "https://www.google.com/maps/place/Bajo+el+Reloj",
+    "zone": "centro-oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Birras Cafe",
+    "rate": 4.4,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Birras+Cafe",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Chocolat Deli Cafe",
+    "rate": 4.1,
+    "cost": "5-10$",
+    "link": "https://www.google.com/maps/place/Chocolat+Deli+Caf%C3%A9",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Arabica",
+    "rate": 4.1,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/HTf7dE1HbsEcutqbA",
+    "zone": "este",
+    "notes": "retiros en puerta, para llevar"
+  },
+  {
+    "name": "Origen",
+    "rate": 4.2,
+    "cost": "1-15$",
+    "link": "https://www.google.com/maps/place/Origen",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Gran Cafe",
+    "rate": 4.2,
+    "cost": "5-25$",
+    "link": "https://maps.app.goo.gl/UW9S5dLzxpKA75Di8",
+    "zone": "centro",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Cafe Venezuela",
+    "rate": 4.2,
+    "cost": "averiguar",
+    "link": "https://maps.app.goo.gl/tG28RNmb7SKFwUMp9",
+    "zone": "centro",
+    "notes": "para llevar, averiguar"
+  },
+  {
+    "name": "Kaldi Cafe",
+    "rate": 4.2,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Kaldi+Cafe",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Saggezza",
+    "rate": 4.4,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Saggezza",
+    "zone": "centro",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cine Citta",
+    "rate": 4.4,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Cine+Citta",
+    "zone": "centro",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Pasteleria Palla Caracas",
+    "rate": 4.4,
+    "cost": "5-20$",
+    "link": "https://www.google.com/maps/place/Pasteler%C3%ADa+Pall%C3%A1+Caracas",
+    "zone": "oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Cafe Noisette",
+    "rate": 4.4,
+    "cost": "5-35$",
+    "link": "https://maps.app.goo.gl/z3PGhbppc8Sac54Q8",
+    "zone": "este",
+    "notes": "para llevar"
+  },
+  {
+    "name": "Hard Rock Cafe Caracas",
+    "rate": 4.4,
+    "cost": "15-45$",
+    "link": "https://maps.app.goo.gl/RuFdK68XfGaENajg6",
+    "zone": "este",
+    "notes": "entrega domicilio, para llevar"
+  },
+  {
+    "name": "El Leon",
+    "rate": 4.3,
+    "cost": "10-30$",
+    "link": "https://www.google.com/maps/place/El+Le%C3%B3n",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Aurora Cafe Restaurante",
+    "rate": 4.3,
+    "cost": "10-20$",
+    "link": "https://www.google.com/maps/place/AURORA+Caf%C3%A9+Restaurante",
+    "zone": "este",
+    "notes": "retiros en puerta, domicilio"
+  },
+  {
+    "name": "Arte Paris Deli Cafe",
+    "rate": 4.3,
+    "cost": "1-30$",
+    "link": "https://www.google.com/maps/place/Arte+Par%C3%ADs+Deli+Caf%C3%A9",
+    "zone": "oeste",
+    "notes": "para llevar, domicilio"
+  },
+  {
+    "name": "Orleon Cafe",
+    "rate": 4.3,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Orleon+Caf%C3%A9",
+    "zone": "este",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Anella Cafe",
+    "rate": 3.9,
+    "cost": "15-20$",
+    "link": "https://www.google.com/maps/place/Anella+Caf%C3%A9",
+    "zone": "centro",
+    "notes": "averiguar"
+  },
+  {
+    "name": "Sur 21 Cafe",
+    "rate": 3.9,
+    "cost": "averiguar",
+    "link": "https://www.google.com/maps/place/Sur+21+Caf%C3%A9",
+    "zone": "centro-oeste",
+    "notes": "averiguar"
+  },
+  {
+    "name": "The Coffee",
+    "rate": 3.9,
+    "cost": "5-10$",
+    "link": "https://maps.app.goo.gl/bRHYU9bZw2TURBi28",
+    "zone": "este",
+    "notes": "permiten perros"
+  }
+]
