@@ -22,6 +22,13 @@ function renderCafes(cafes) {
   coffeeShopList.innerHTML = "";
 
   allCafes.forEach((cafe, index) => {
+     const mapsQuery = encodeURIComponent(
+    `${cafe.name} café Caracas Venezuela`
+  );
+
+  const mapsUrl =
+    `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+
     const card = document.createElement("article");
     card.className = "coffee-card";
 
@@ -44,7 +51,13 @@ function renderCafes(cafes) {
         <span>${cafe.notes || "sin notas"}</span>
       </div>
 
-      <a href="${cafe.link}" target="_blank">Ver en Google Maps</a>
+      <a
+  href="${mapsUrl}"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Ver en Google Maps
+</a>
     `;
 
     coffeeShopList.appendChild(card);
