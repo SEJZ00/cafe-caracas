@@ -56,33 +56,70 @@ function renderCafes(cafes) {
 function normalizeText(value) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-
+function updateResultCount(count) {
+  resultCount.textContent =
+    `${count} ${count === 1 ? "café" : "cafés"}`;
+}
 function filterCoffeeShops() {
   const query = normalizeText(searchInput.value.trim());
-  const cards = Array.from(document.querySelectorAll(".coffee-card"));
+
+  const cards = Array.from(
+    document.querySelectorAll(".coffee-card")
+  );
 
   let visibleCount = 0;
 
   cards.forEach(card => {
-    const searchable = normalizeText(
-      `${card.dataset.name} ${card.dataset.zone} ${card.dataset.cost} ${card.dataset.notes}`
-    );
+    const name = normalizeText(card.dataset.name || "");
+    const zone = normalizeText(card.dataset.zone || "");
+    const cost = normalizeText(card.dataset.cost || "");
+    const notes = normalizeText(card.dataset.notes || "");
 
-    const matches = searchable.includes(query);
+    // Convierte zonas como "centro-este"
+    // en palabras independientes: ["centro", "este"]
+    const zoneWords = zone
+      .replace(/-/g, " ")
+      .split(/\s+/)
+      .filter(Boolean);
+
+    // Convierte lo que busca el usuario en palabras
+    const queryWords = query
+      .replace(/-/g, " ")
+      .split(/\s+/)
+      .filter(Boolean);
+
+    // Para nombre, costo y notas permitimos coincidencias parciales
+    const generalSearch =
+      name.includes(query) ||
+      cost.includes(query) ||
+      notes.includes(query);
+
+    // Para zona exigimos palabras completas
+    // Así "este" NO coincide con "oeste"
+    const zoneMatch =
+      queryWords.length > 0 &&
+      queryWords.every(word =>
+        zoneWords.includes(word)
+      );
+
+    const matches =
+      query === "" ||
+      generalSearch ||
+      zoneMatch;
+
     card.hidden = !matches;
 
-    if (matches) visibleCount++;
+    if (matches) {
+      visibleCount++;
+    }
   });
 
   updateResultCount(visibleCount);
-  emptyState.hidden = visibleCount !== 0;
-}
 
-function updateResultCount(count) {
-  resultCount.textContent = `${count} ${count === 1 ? "café" : "cafés"}`;
+  emptyState.hidden =
+    visibleCount !== 0;
 }
 
 searchInput.addEventListener("input", filterCoffeeShops);
 
-// Initial load
 loadCafes();
