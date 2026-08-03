@@ -328,6 +328,15 @@ h3 {
 /* =========================
    COFFEE CARDS
    ========================= */
+.coffee-card__image {
+  display: block;
+  width: 100%;
+  height: 190px;
+  margin-bottom: 22px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: var(--soft-white);
+}
 
 .coffee-card {
 
