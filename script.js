@@ -38,6 +38,15 @@ function renderCafes(cafes) {
     card.dataset.notes = cafe.notes || "";
 
     card.innerHTML = `
+  ${cafe.image ? `
+    <img
+      class="coffee-card__image"
+      src="${cafe.image}"
+      alt="${cafe.name}"
+      loading="lazy"
+    >
+  ` : ""}
+
       <div class="coffee-card__top">
         <span class="coffee-card__number">${String(index + 1).padStart(2, "0")}</span>
         <span class="coffee-card__tag">${cafe.zone}</span>
