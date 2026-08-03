@@ -18,21 +18,111 @@
 <body>
 
   <!-- Hero -->
-  <header class="hero">
-    <div class="hero__content">
-      <span class="eyebrow">DIRECTORIO LOCAL</span>
+  <header class="site-header">
+  <div class="site-header__top">
+    <a class="brand" href="./index.html" aria-label="Caracas Café">
+      <span class="brand__name">Caracas Café</span>
+    </a>
 
-      <h1>Cafés de Caracas</h1>
+    <nav class="main-categories" aria-label="Categorías principales">
+      <button class="main-category main-category--active" type="button" data-category="all">
+        Todos
+      </button>
 
-      <p>Descubre espacios para disfrutar buen café, trabajar, conversar o simplemente escapar un rato del tráfico caraqueño.</p>
+      <button class="main-category" type="button" data-category="coworking">
+        Coworking
+      </button>
 
-      <!-- Search -->
-      <div class="search-box">
-        <label class="sr-only" for="searchInput">Buscar cafés</label>
-        <input type="search" id="searchInput" placeholder="Buscar por nombre, zona o especialidad..." autocomplete="off" />
+      <button class="main-category" type="button" data-category="cozy">
+        Cozy
+      </button>
+
+      <button class="main-category" type="button" data-category="sightseeing">
+        Sightseeing
+      </button>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-actions__link" href="#add-cafe">
+        Agregar un café
+      </a>
+
+      <button
+        class="header-actions__menu"
+        type="button"
+        aria-label="Abrir menú"
+      >
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <div class="search-shell">
+    <button
+      class="search-trigger"
+      id="searchTrigger"
+      type="button"
+      aria-expanded="false"
+      aria-controls="advancedSearch"
+    >
+      <span class="search-trigger__text">
+        Buscar cafés en Caracas
+      </span>
+
+      <span class="search-trigger__icon" aria-hidden="true">
+        🔍
+      </span>
+    </button>
+
+    <div class="advanced-search" id="advancedSearch" hidden>
+      <div class="advanced-search__grid">
+        <label class="advanced-search__field">
+          <span>Zona</span>
+          <select id="zoneFilter">
+            <option value="">Todas las zonas</option>
+            <option value="este">Este</option>
+            <option value="centro-este">Centro-este</option>
+            <option value="centro">Centro</option>
+            <option value="oeste">Oeste</option>
+          </select>
+        </label>
+
+        <label class="advanced-search__field">
+          <span>Tipo de lugar</span>
+          <select id="typeFilter">
+            <option value="">Todos los tipos</option>
+            <option value="cafetería">Cafetería</option>
+            <option value="especialidad">Especialidad</option>
+            <option value="brunch">Brunch</option>
+            <option value="pastelería">Pastelería</option>
+            <option value="panadería">Panadería</option>
+          </select>
+        </label>
+
+        <label class="advanced-search__field">
+          <span>Presupuesto</span>
+          <select id="priceFilter">
+            <option value="">Cualquier precio</option>
+            <option value="5">$5 o menos</option>
+            <option value="10">$5–10</option>
+            <option value="20">$10–20</option>
+            <option value="21">$20+</option>
+          </select>
+        </label>
+
+        <label class="advanced-search__field advanced-search__field--wide">
+          <span>Buscar por nombre o especialidad</span>
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Ej. Casa Canela, brunch, terraza..."
+            autocomplete="off"
+          />
+        </label>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Main -->
   <main>
