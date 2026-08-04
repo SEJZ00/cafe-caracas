@@ -38,64 +38,36 @@ function renderCafes(cafes) {
     card.dataset.notes = cafe.notes || "";
 
     card.innerHTML = `
-  <a
-    class="coffee-card__link"
-    href="${mapsUrl}"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Ver ${cafe.name} en Google Maps"
-  >
-    <div class="coffee-card__media">
-      ${
-        cafe.image
-          ? `
-            <img
-              class="coffee-card__image"
-              src="${cafe.image}"
-              alt="${cafe.name}"
-              loading="lazy"
-            >
-          `
-          : `
-            <div class="coffee-card__placeholder">
-              <span>Caracas Café</span>
-            </div>
-          `
-      }
+  ${cafe.image ? `
+    <img
+      class="coffee-card__image"
+      src="${cafe.image}"
+      alt="${cafe.name}"
+      loading="lazy"
+    >
+  ` : ""}
 
-      <button
-        class="coffee-card__favorite"
-        type="button"
-        aria-label="Guardar ${cafe.name}"
-      >
-        ♡
-      </button>
-    </div>
-
-    <div class="coffee-card__content">
-      <div class="coffee-card__heading">
-        <h3>${cafe.name}</h3>
-
-        <span class="coffee-card__rating">
-          ★ ${cafe.rate || "N/A"}
-        </span>
+      <div class="coffee-card__top">
+        <span class="coffee-card__number">${String(index + 1).padStart(2, "0")}</span>
+        <span class="coffee-card__tag">${cafe.zone}</span>
       </div>
 
-      <p class="coffee-card__location">
-        ${cafe.location || cafe.zone || "Caracas"}
-        ${
-          cafe.category
-            ? ` · ${cafe.category}`
-            : ""
-        }
-      </p>
+      <h3>${cafe.name}</h3>
 
-      <p class="coffee-card__price">
-        ${cafe.cost || "Precio por verificar"}
-      </p>
-    </div>
-  </a>
-`;
+      <p>Rating: ${cafe.rate || "N/A"} · Costo: ${cafe.cost || "N/A"}</p>
+
+      <div class="coffee-card__meta">
+        <span>${cafe.notes || "sin notas"}</span>
+      </div>
+
+      <a
+  href="${mapsUrl}"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Ver en Google Maps
+</a>
+    `;
 
     coffeeShopList.appendChild(card);
   });
