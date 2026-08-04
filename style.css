@@ -828,3 +828,103 @@ footer p {
 
     color:white;
 }
+/* =====================================================
+   REDESIGN V2 COLOR SYSTEM
+===================================================== */
+
+:root {
+  --cream: #f6f1e8;
+  --soft-cream: #fbf8f2;
+  --warm-beige: #e8dfd1;
+  --taupe: #b8aa98;
+  --olive: #6f7250;
+  --olive-dark: #4f5436;
+  --coffee: #5b4636;
+  --espresso: #2f241d;
+  --muted-text: #7d746c;
+  --line: rgba(91, 70, 54, 0.14);
+  --white: #ffffff;
+}
+
+body {
+  background: var(--soft-cream);
+  color: var(--espresso);
+}
+
+.app-header {
+  background: rgba(251, 248, 242, 0.94);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  color: var(--espresso);
+}
+
+.brand strong {
+  color: var(--espresso);
+}
+
+.brand small {
+  color: var(--muted-text);
+}
+
+.search-trigger {
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow:
+    0 8px 26px rgba(47, 36, 29, 0.07),
+    0 2px 8px rgba(47, 36, 29, 0.04);
+}
+
+.search-trigger__item strong {
+  color: var(--espresso);
+}
+
+.search-trigger__item span {
+  color: var(--muted-text);
+}
+
+.search-trigger__divider {
+  background: var(--line);
+}
+
+.search-trigger__icon {
+  background: var(--olive-dark);
+  color: var(--white);
+}
+
+.primary-filter {
+  background: var(--soft-cream);
+  border: 1px solid var(--line);
+  color: var(--coffee);
+}
+
+.primary-filter:hover {
+  background: var(--cream);
+  border-color: rgba(79, 84, 54, 0.28);
+}
+
+.primary-filter.active {
+  background: var(--olive-dark);
+  color: var(--white);
+  border-color: var(--olive-dark);
+}
+
+/* Temporary cleanup while the new layout is being built */
+.directory {
+  background: var(--soft-cream);
+}
+
+.directory .eyebrow {
+  color: var(--olive-dark);
+}
+
+.directory h2,
+.directory h1 {
+  color: var(--espresso);
+}
+
+footer {
+  background: var(--olive-dark);
+  color: var(--white);
+}
