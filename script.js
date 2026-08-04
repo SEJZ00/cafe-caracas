@@ -38,36 +38,64 @@ function renderCafes(cafes) {
     card.dataset.notes = cafe.notes || "";
 
     card.innerHTML = `
-  ${cafe.image ? `
-    <img
-      class="coffee-card__image"
-      src="${cafe.image}"
-      alt="${cafe.name}"
-      loading="lazy"
-    >
-  ` : ""}
+  <a
+    class="coffee-card__link"
+    href="${mapsUrl}"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Ver ${cafe.name} en Google Maps"
+  >
+    <div class="coffee-card__media">
+      ${
+        cafe.image
+          ? `
+            <img
+              class="coffee-card__image"
+              src="${cafe.image}"
+              alt="${cafe.name}"
+              loading="lazy"
+            >
+          `
+          : `
+            <div class="coffee-card__placeholder">
+              <span>Caracas Café</span>
+            </div>
+          `
+      }
 
-      <div class="coffee-card__top">
-        <span class="coffee-card__number">${String(index + 1).padStart(2, "0")}</span>
-        <span class="coffee-card__tag">${cafe.zone}</span>
+      <button
+        class="coffee-card__favorite"
+        type="button"
+        aria-label="Guardar ${cafe.name}"
+      >
+        ♡
+      </button>
+    </div>
+
+    <div class="coffee-card__content">
+      <div class="coffee-card__heading">
+        <h3>${cafe.name}</h3>
+
+        <span class="coffee-card__rating">
+          ★ ${cafe.rate || "N/A"}
+        </span>
       </div>
 
-      <h3>${cafe.name}</h3>
+      <p class="coffee-card__location">
+        ${cafe.location || cafe.zone || "Caracas"}
+        ${
+          cafe.category
+            ? ` · ${cafe.category}`
+            : ""
+        }
+      </p>
 
-      <p>Rating: ${cafe.rate || "N/A"} · Costo: ${cafe.cost || "N/A"}</p>
-
-      <div class="coffee-card__meta">
-        <span>${cafe.notes || "sin notas"}</span>
-      </div>
-
-      <a
-  href="${mapsUrl}"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Ver en Google Maps
-</a>
-    `;
+      <p class="coffee-card__price">
+        ${cafe.cost || "Precio por verificar"}
+      </p>
+    </div>
+  </a>
+`;
 
     coffeeShopList.appendChild(card);
   });
