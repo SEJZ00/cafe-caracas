@@ -669,3 +669,162 @@ footer p {
   }
 
 }
+/* =====================================================
+   HEADER V2
+===================================================== */
+
+.app-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(248,245,238,.92);
+    backdrop-filter:blur(16px);
+
+    border-bottom:1px solid rgba(70,45,35,.08);
+
+    padding:18px 0 12px;
+}
+
+.app-header__top{
+    width:min(1400px,92%);
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    text-decoration:none;
+    color:#4B0A0F;
+}
+
+.brand__logo{
+    font-size:26px;
+}
+
+.brand strong{
+    display:block;
+    font-size:28px;
+    font-family:"Playfair Display",serif;
+}
+
+.brand small{
+    color:#8b776d;
+    font-size:13px;
+}
+
+.search-trigger{
+
+    flex:1;
+    max-width:760px;
+
+    display:flex;
+    align-items:center;
+
+    background:white;
+
+    border-radius:999px;
+
+    padding:10px;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.07);
+
+    cursor:pointer;
+}
+
+.search-trigger__item{
+
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    padding:0 18px;
+}
+
+.search-trigger__item strong{
+
+    font-size:12px;
+
+    margin-bottom:2px;
+}
+
+.search-trigger__item span{
+
+    color:#85756d;
+
+    font-size:14px;
+}
+
+.search-trigger__divider{
+
+    width:1px;
+    height:36px;
+
+    background:#ece6df;
+}
+
+.search-trigger__icon{
+
+    width:54px;
+    height:54px;
+
+    border-radius:50%;
+
+    background:#5b1417;
+
+    display:grid;
+    place-items:center;
+
+    color:white;
+
+    font-size:20px;
+
+    flex-shrink:0;
+}
+
+.primary-filters{
+
+    margin-top:18px;
+
+    display:flex;
+    justify-content:center;
+    gap:14px;
+}
+
+.primary-filter{
+
+    background:white;
+
+    border:1px solid #e5ddd5;
+
+    border-radius:999px;
+
+    padding:12px 22px;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.primary-filter:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.primary-filter.active{
+
+    background:#4B0A0F;
+
+    color:white;
+}
