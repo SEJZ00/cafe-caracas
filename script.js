@@ -82,7 +82,9 @@ function updateResultCount(count) {
   resultCount.textContent = `${count} ${count === 1 ? "café" : "cafés"}`;
 }
 
-searchInput.addEventListener("input", filterCoffeeShops);
+if (searchInput) {
+  searchInput.addEventListener("input", filterCoffeeShops);
+}
 
 // Initial load
 loadCafes();
