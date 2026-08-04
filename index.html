@@ -82,27 +82,125 @@
 
 </header>
   <!-- Main -->
-  <main>
-    <section class="directory" aria-labelledby="directory-title">
+  <main class="page-shell">
+  <div class="page-layout">
+
+    <section
+      class="main-content"
+      aria-labelledby="directory-title"
+    >
       <div class="section-heading">
         <div>
-          <span class="eyebrow">EXPLORA</span>
-          <h2 id="directory-title">Coffee shops</h2>
+          <span class="eyebrow">DESCUBRE</span>
+          <h2 id="directory-title">Cafés cerca de ti</h2>
         </div>
 
-        <p id="resultCount" class="result-count" aria-live="polite"></p>
+        <p
+          id="resultCount"
+          class="result-count"
+          aria-live="polite"
+        ></p>
       </div>
 
-      <!-- Coffee Shop Grid -->
-      <div id="coffeeShopList" class="coffee-grid"></div>
+      <div
+        id="coffeeShopList"
+        class="coffee-grid"
+      ></div>
 
-      <!-- Empty State -->
-      <div id="emptyState" class="empty-state" hidden>
+      <div
+        id="emptyState"
+        class="empty-state"
+        hidden
+      >
         <h3>No encontramos cafés.</h3>
         <p>Prueba con otra zona, nombre o tipo de café.</p>
       </div>
     </section>
-  </main>
+
+    <aside class="events-sidebar" aria-label="Eventos en cafés">
+
+      <section class="sidebar-card events-card">
+        <div class="sidebar-card__header">
+          <div>
+            <span class="eyebrow">AGENDA</span>
+            <h2>Eventos en cafés</h2>
+          </div>
+
+          <a href="#" class="sidebar-card__link">
+            Ver agenda
+          </a>
+        </div>
+
+        <div class="event-list">
+          <article class="event-item">
+            <div class="event-item__date">
+              <strong>24</strong>
+              <span>MAY</span>
+            </div>
+
+            <div class="event-item__content">
+              <h3>Noche acústica</h3>
+              <p>Casa Canela</p>
+              <small>Sábado · 7:00 PM</small>
+            </div>
+          </article>
+
+          <article class="event-item">
+            <div class="event-item__date">
+              <strong>25</strong>
+              <span>MAY</span>
+            </div>
+
+            <div class="event-item__content">
+              <h3>Taller de Latte Art</h3>
+              <p>Caracas Coffee Roaster</p>
+              <small>Domingo · 11:00 AM</small>
+            </div>
+          </article>
+
+          <article class="event-item">
+            <div class="event-item__date">
+              <strong>27</strong>
+              <span>MAY</span>
+            </div>
+
+            <div class="event-item__content">
+              <h3>Velada de poesía</h3>
+              <p>Café de Reyes</p>
+              <small>Martes · 6:00 PM</small>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sidebar-card ad-card">
+        <span class="eyebrow">PRÓXIMAMENTE</span>
+        <h2>Espacio destacado</h2>
+
+        <p>
+          Publicidad para marcas, eventos y negocios relacionados
+          con el café.
+        </p>
+
+        <div class="ad-card__placeholder">
+          <span>Tu negocio aquí</span>
+        </div>
+      </section>
+
+      <section class="sidebar-card calendar-card">
+        <span class="eyebrow">ESTA SEMANA</span>
+        <h2>Agenda rápida</h2>
+
+        <div class="calendar-card__stats">
+          <span>3 eventos</span>
+          <span>2 talleres</span>
+          <span>1 concierto</span>
+        </div>
+      </section>
+
+    </aside>
+  </div>
+</main>
 
   <!-- Footer -->
   <footer>
