@@ -928,3 +928,250 @@ footer {
   background: var(--olive-dark);
   color: var(--white);
 }
+/* =====================================================
+   HOMEPAGE TWO-COLUMN LAYOUT
+===================================================== */
+
+.page-shell {
+  width: 100%;
+  padding: 44px 0 72px;
+  background: var(--soft-cream);
+}
+
+.page-layout {
+  width: min(1440px, calc(100% - 48px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 32px;
+  align-items: start;
+}
+
+.main-content {
+  min-width: 0;
+}
+
+.main-content .section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.main-content .section-heading h2 {
+  margin: 8px 0 0;
+  color: var(--espresso);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.main-content .eyebrow {
+  color: var(--olive-dark);
+}
+
+.result-count {
+  margin: 0 0 4px;
+  color: var(--coffee);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* =====================================================
+   EVENTS SIDEBAR
+===================================================== */
+
+.events-sidebar {
+  position: sticky;
+  top: 174px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-card {
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 22px;
+  box-shadow:
+    0 12px 30px rgba(47, 36, 29, 0.05),
+    0 2px 8px rgba(47, 36, 29, 0.03);
+}
+
+.sidebar-card__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.sidebar-card h2 {
+  margin: 6px 0 0;
+  color: var(--espresso);
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.sidebar-card__link {
+  color: var(--olive-dark);
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.sidebar-card__link:hover {
+  text-decoration: underline;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-item {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--soft-cream);
+}
+
+.event-item__date {
+  display: flex;
+  min-height: 62px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+  background: var(--cream);
+  color: var(--olive-dark);
+}
+
+.event-item__date strong {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.event-item__date span {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.event-item__content h3 {
+  margin: 0;
+  color: var(--espresso);
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+}
+
+.event-item__content p {
+  margin: 4px 0 0;
+  color: var(--coffee);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.event-item__content small {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted-text);
+  font-size: 12px;
+}
+
+.ad-card p {
+  margin: 12px 0 18px;
+  color: var(--muted-text);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.ad-card__placeholder {
+  display: grid;
+  min-height: 150px;
+  place-items: center;
+
+  border: 1px dashed rgba(79, 84, 54, 0.3);
+  border-radius: 18px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(111, 114, 80, 0.04),
+      rgba(232, 223, 209, 0.35)
+    );
+
+  color: var(--olive-dark);
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+}
+
+.calendar-card__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.calendar-card__stats span {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--coffee);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* =====================================================
+   RESPONSIVE HOMEPAGE LAYOUT
+===================================================== */
+
+@media (max-width: 1100px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .events-sidebar {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .page-shell {
+    padding-top: 30px;
+  }
+
+  .page-layout {
+    width: min(100% - 24px, 700px);
+  }
+
+  .main-content .section-heading {
+    align-items: flex-start;
+  }
+
+  .main-content .section-heading h2 {
+    font-size: 38px;
+  }
+
+  .events-sidebar {
+    grid-template-columns: 1fr;
+  }
+}
