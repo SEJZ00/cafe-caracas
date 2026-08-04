@@ -18,22 +18,69 @@
 <body>
 
   <!-- Hero -->
-  <header class="hero">
-    <div class="hero__content">
-      <span class="eyebrow">DIRECTORIO LOCAL</span>
+  <header class="app-header">
 
-      <h1>Cafés de Caracas</h1>
+  <div class="app-header__top">
 
-      <p>Descubre espacios para disfrutar buen café, trabajar, conversar o simplemente escapar un rato del tráfico caraqueño.</p>
+    <a class="brand" href="./index.html">
+      <span class="brand__logo">☕</span>
 
-      <!-- Search -->
-      <div class="search-box">
-        <label class="sr-only" for="searchInput">Buscar cafés</label>
-        <input type="search" id="searchInput" placeholder="Buscar por nombre, zona o especialidad..." autocomplete="off" />
+      <div>
+        <strong>Caracas Café</strong>
+        <small>Descubre Caracas café por café</small>
       </div>
-    </div>
-  </header>
+    </a>
 
+    <button id="searchLauncher" class="search-trigger">
+
+      <div class="search-trigger__item">
+        <strong>Buscar</strong>
+        <span>Nombre o cafetería</span>
+      </div>
+
+      <div class="search-trigger__divider"></div>
+
+      <div class="search-trigger__item">
+        <strong>Zona</strong>
+        <span>Todas</span>
+      </div>
+
+      <div class="search-trigger__divider"></div>
+
+      <div class="search-trigger__item">
+        <strong>Tipo</strong>
+        <span>Coworking, Cozy...</span>
+      </div>
+
+      <span class="search-trigger__icon">
+        🔍
+      </span>
+
+    </button>
+
+  </div>
+
+  <nav class="primary-filters">
+
+    <button class="primary-filter active" data-category="all">
+      Todo
+    </button>
+
+    <button class="primary-filter" data-category="coworking">
+      Coworking
+    </button>
+
+    <button class="primary-filter" data-category="cozy">
+      Cozy
+    </button>
+
+    <button class="primary-filter" data-category="sightseeing">
+      Sightseeing
+    </button>
+
+  </nav>
+
+</header>
   <!-- Main -->
   <main>
     <section class="directory" aria-labelledby="directory-title">
