@@ -22,13 +22,6 @@ function renderCafes(cafes) {
   coffeeShopList.innerHTML = "";
 
   allCafes.forEach((cafe, index) => {
-     const mapsQuery = encodeURIComponent(
-    `${cafe.name} café Caracas Venezuela`
-  );
-
-  const mapsUrl =
-    `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
-
     const card = document.createElement("article");
     card.className = "coffee-card";
 
@@ -38,15 +31,6 @@ function renderCafes(cafes) {
     card.dataset.notes = cafe.notes || "";
 
     card.innerHTML = `
-  ${cafe.image ? `
-    <img
-      class="coffee-card__image"
-      src="${cafe.image}"
-      alt="${cafe.name}"
-      loading="lazy"
-    >
-  ` : ""}
-
       <div class="coffee-card__top">
         <span class="coffee-card__number">${String(index + 1).padStart(2, "0")}</span>
         <span class="coffee-card__tag">${cafe.zone}</span>
@@ -60,13 +44,7 @@ function renderCafes(cafes) {
         <span>${cafe.notes || "sin notas"}</span>
       </div>
 
-      <a
-  href="${mapsUrl}"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Ver en Google Maps
-</a>
+      <a href="${cafe.link}" target="_blank">Ver en Google Maps</a>
     `;
 
     coffeeShopList.appendChild(card);
@@ -78,70 +56,33 @@ function renderCafes(cafes) {
 function normalizeText(value) {
   return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-function updateResultCount(count) {
-  resultCount.textContent =
-    `${count} ${count === 1 ? "café" : "cafés"}`;
-}
+
 function filterCoffeeShops() {
   const query = normalizeText(searchInput.value.trim());
-
-  const cards = Array.from(
-    document.querySelectorAll(".coffee-card")
-  );
+  const cards = Array.from(document.querySelectorAll(".coffee-card"));
 
   let visibleCount = 0;
 
   cards.forEach(card => {
-    const name = normalizeText(card.dataset.name || "");
-    const zone = normalizeText(card.dataset.zone || "");
-    const cost = normalizeText(card.dataset.cost || "");
-    const notes = normalizeText(card.dataset.notes || "");
+    const searchable = normalizeText(
+      `${card.dataset.name} ${card.dataset.zone} ${card.dataset.cost} ${card.dataset.notes}`
+    );
 
-    // Convierte zonas como "centro-este"
-    // en palabras independientes: ["centro", "este"]
-    const zoneWords = zone
-      .replace(/-/g, " ")
-      .split(/\s+/)
-      .filter(Boolean);
-
-    // Convierte lo que busca el usuario en palabras
-    const queryWords = query
-      .replace(/-/g, " ")
-      .split(/\s+/)
-      .filter(Boolean);
-
-    // Para nombre, costo y notas permitimos coincidencias parciales
-    const generalSearch =
-      name.includes(query) ||
-      cost.includes(query) ||
-      notes.includes(query);
-
-    // Para zona exigimos palabras completas
-    // Así "este" NO coincide con "oeste"
-    const zoneMatch =
-      queryWords.length > 0 &&
-      queryWords.every(word =>
-        zoneWords.includes(word)
-      );
-
-    const matches =
-      query === "" ||
-      generalSearch ||
-      zoneMatch;
-
+    const matches = searchable.includes(query);
     card.hidden = !matches;
 
-    if (matches) {
-      visibleCount++;
-    }
+    if (matches) visibleCount++;
   });
 
   updateResultCount(visibleCount);
+  emptyState.hidden = visibleCount !== 0;
+}
 
-  emptyState.hidden =
-    visibleCount !== 0;
+function updateResultCount(count) {
+  resultCount.textContent = `${count} ${count === 1 ? "café" : "cafés"}`;
 }
 
 searchInput.addEventListener("input", filterCoffeeShops);
 
+// Initial load
 loadCafes();
